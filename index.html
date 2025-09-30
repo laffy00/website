@@ -9,20 +9,64 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="./assets/css/custom.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+    /* 모바일 네비게이션 드로어 스타일 */
+    .mobile-nav { display: none; }
+    @media (max-width: 768px) {
+      .desktop-nav { display: none !important; }
+      .mobile-nav { display: flex !important; }
+      .mobile-menu {
+        position: fixed; top: 0; right: 0; width: 80vw; max-width: 320px; height: 100vh;
+        background: #fff; box-shadow: -2px 0 16px #0002; z-index: 9999;
+        flex-direction: column; padding: 2rem 1.5rem; gap: 2rem; transform: translateX(100%);
+        transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+      }
+      .mobile-menu.open { transform: translateX(0); }
+      .mobile-menu a { font-size: 1.25rem; font-weight: 700; padding: 1rem 0; border-bottom: 1px solid #eee; }
+      .mobile-menu a:last-child { border-bottom: none; }
+      .mobile-menu-close { position: absolute; top: 1.2rem; right: 1.2rem; font-size: 2rem; color: #1E3A8A; background: none; border: none; }
+      .mobile-nav-btn { background: none; border: none; font-size: 2rem; color: #1E3A8A; margin-left: auto; }
+    }
+  </style>
 </head>
 <body class="bg-white text-gray-900 font-sans">
   <!-- 네비게이션 -->
   <nav class="w-full px-6 py-4 flex justify-between items-center shadow-md bg-white fixed top-0 left-0 z-50">
     <div class="text-2xl font-bold tracking-widest">LS TECH</div>
-    <ul class="flex gap-8 text-lg font-medium">
-  <li><a href="index.html" class="hover:text-blue-600">메인페이지</a></li>
-  <li><a href="company.html" class="hover:text-blue-600">회사소개</a></li>
-  <li><a href="product.html" class="hover:text-blue-600">제품소개</a></li>
-  <li><a href="sustain.html" class="hover:text-blue-600">지속가능경영</a></li>
-  <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+    <!-- 데스크탑 메뉴 -->
+    <ul class="desktop-nav flex gap-8 text-lg font-medium">
+      <li><a href="index.html" class="hover:text-blue-600">메인페이지</a></li>
+      <li><a href="company.html" class="hover:text-blue-600">회사소개</a></li>
+      <li><a href="product.html" class="hover:text-blue-600">제품소개</a></li>
+      <li><a href="sustain.html" class="hover:text-blue-600">지속가능경영</a></li>
+      <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
     </ul>
+    <!-- 모바일 메뉴 버튼 -->
+    <div class="mobile-nav" style="display:none; align-items:center; width:100%; justify-content:flex-end;">
+      <button class="mobile-nav-btn" aria-label="메뉴 열기" onclick="document.querySelector('.mobile-menu').classList.add('open')">&#9776;</button>
+      <nav class="mobile-menu" tabindex="-1">
+        <button class="mobile-menu-close" aria-label="메뉴 닫기" onclick="document.querySelector('.mobile-menu').classList.remove('open')">&times;</button>
+        <a href="index.html">메인페이지</a>
+        <a href="company.html">회사소개</a>
+        <a href="product.html">제품소개</a>
+        <a href="sustain.html">지속가능경영</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </nav>
   <main class="pt-24">
+    <script>
+      // 모바일 메뉴 외부 클릭 시 닫기
+      document.addEventListener('click', function(e) {
+        const menu = document.querySelector('.mobile-menu');
+        if(menu && menu.classList.contains('open')) {
+          if(!menu.contains(e.target) && !e.target.classList.contains('mobile-nav-btn')) {
+            menu.classList.remove('open');
+          }
+        }
+      });
+    </script>
     <!-- Hero 영역 -->
     <section id="hero" class="w-full h-screen relative">
       <div class="swiper hero-swiper w-full h-full">
