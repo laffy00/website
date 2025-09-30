@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제품소개 | LS TECH</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./assets/css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <!-- 네비게이션 -->
+  <nav class="w-full px-6 py-4 flex justify-between items-center shadow-md bg-white fixed top-0 left-0 z-50">
+    <div class="text-2xl font-bold tracking-widest">LS TECH</div>
+    <ul class="flex gap-8 text-lg font-medium">
+      <li><a href="index.html#hero" class="hover:text-blue-600">메인페이지</a></li>
+      <li><a href="company.html" class="hover:text-blue-600">회사소개</a></li>
+      <li><a href="product.html" class="text-blue-600 font-bold">제품소개</a></li>
+      <li><a href="index.html#sustain" class="hover:text-blue-600">지속가능경영</a></li>
+      <li><a href="index.html#contact" class="hover:text-blue-600">Contact</a></li>
+    </ul>
+  </nav>
+  <main class="pt-24">
+    <!-- Hero 영역 -->
+    <section class="w-full h-[60vh] md:h-[70vh] flex items-center justify-center relative" style="background-image:url('./assets/image/kv-img-08.jpg'); background-size:cover; background-position:center;">
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center w-full h-full">
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg text-center">제품소개</h1>
+      </div>
+    </section>
+    <!-- 제품 리스트 영역 -->
+    <section class="max-w-7xl mx-auto py-20 px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">주요 제품</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <!-- 제품 카드 1: 스마트 에너지 저장장치 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group transition-transform duration-300 hover:scale-105 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="0">
+          <div class="relative h-56">
+            <img src="./assets/image/product-01.jpg" alt="스마트 에너지 저장장치" class="object-cover w-full h-full">
+            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">스마트 에너지 저장장치(ESS)</h3>
+            <p class="text-gray-600 mb-4 text-sm">고효율 배터리 기반의 친환경 에너지 저장 및 관리 시스템</p>
+          </div>
+        </div>
+        <!-- 제품 카드 2: 산업용 IoT 센서 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group transition-transform duration-300 hover:scale-105 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="100">
+          <div class="relative h-56">
+            <img src="./assets/image/product-02.jpg" alt="산업용 IoT 센서" class="object-cover w-full h-full">
+            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">산업용 IoT 센서</h3>
+            <p class="text-gray-600 mb-4 text-sm">스마트 공장 및 설비 모니터링을 위한 고정밀 IoT 센서 솔루션</p>
+          </div>
+        </div>
+        <!-- 제품 카드 3: 친환경 전기차 충전기 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group transition-transform duration-300 hover:scale-105 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="200">
+          <div class="relative h-56">
+            <img src="./assets/image/product-03.jpg" alt="친환경 전기차 충전기" class="object-cover w-full h-full">
+            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">친환경 전기차 충전기</h3>
+            <p class="text-gray-600 mb-4 text-sm">고속 충전 지원, 에너지 절감형 전기차 충전 인프라</p>
+          </div>
+        </div>
+        <!-- 제품 카드 4: AI 기반 에너지 관리 플랫폼 -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden group transition-transform duration-300 hover:scale-105 hover:shadow-2xl" data-aos="fade-up" data-aos-delay="300">
+          <div class="relative h-56">
+            <img src="./assets/image/product-04.jpg" alt="AI 기반 에너지 관리 플랫폼" class="object-cover w-full h-full">
+            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition"></div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">AI 기반 에너지 관리 플랫폼</h3>
+            <p class="text-gray-600 mb-4 text-sm">실시간 데이터 분석을 통한 에너지 사용 최적화 및 비용 절감</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 제품 상세 설명 영역 (옵션) -->
+    <section id="product-detail" class="max-w-5xl mx-auto py-20 px-4">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1" data-aos="fade-up">
+          <img src="./assets/image/product-01-detail.jpg" alt="Eco Power System 상세" class="rounded-xl shadow-lg w-full h-auto object-cover">
+        </div>
+        <div class="flex-1" data-aos="fade-up" data-aos-delay="100">
+          <h2 class="text-2xl md:text-3xl font-bold mb-4">Eco Power System</h2>
+          <p class="text-gray-700 mb-6">LS TECH의 Eco Power System은 고효율 친환경 전력 솔루션으로, 에너지 절감과 친환경 기술을 동시에 실현합니다. 다양한 산업 현장에 적용 가능하며, 신뢰성과 효율성을 모두 갖춘 차세대 제품입니다.</p>
+          <a href="index.html#contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded font-bold hover:bg-blue-700 transition">제품 상담하기</a>
+        </div>
+      </div>
+    </section>
+    <!-- CTA 영역 -->
+    <section class="w-full py-16 bg-blue-50">
+      <div class="max-w-3xl mx-auto flex flex-col items-center gap-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-2" data-aos="fade-up">LS TECH의 혁신적인 제품을 경험해보세요</h2>
+        <a href="index.html#contact" class="inline-block bg-blue-600 text-white px-8 py-3 rounded font-bold hover:bg-blue-700 transition" data-aos="fade-up" data-aos-delay="100">문의하기</a>
+      </div>
+    </section>
+  </main>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      once: true
+    });
+  </script>
+</body>
+</html>

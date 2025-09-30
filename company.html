@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회사소개 | LS TECH</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./assets/css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <!-- 네비게이션 -->
+  <nav class="w-full px-6 py-4 flex justify-between items-center shadow-md bg-white fixed top-0 left-0 z-50">
+    <div class="text-2xl font-bold tracking-widest">LS TECH</div>
+    <ul class="flex gap-8 text-lg font-medium">
+      <li><a href="index.html#hero" class="hover:text-blue-600">메인페이지</a></li>
+      <li><a href="company.html" class="text-blue-600 font-bold">회사소개</a></li>
+      <li><a href="index.html#business" class="hover:text-blue-600">제품소개</a></li>
+      <li><a href="index.html#sustain" class="hover:text-blue-600">지속가능경영</a></li>
+      <li><a href="index.html#contact" class="hover:text-blue-600">Contact</a></li>
+    </ul>
+  </nav>
+  <main class="pt-24">
+    <!-- Hero 영역 -->
+    <section class="w-full h-[60vh] md:h-[70vh] flex items-center justify-center relative" style="background-image:url('./assets/image/kv-img-07.jpg'); background-size:cover; background-position:center;">
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center w-full h-full">
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg text-center">회사소개</h1>
+      </div>
+    </section>
+  <!-- 인증 및 수상내역 -->
+  <section class="max-w-4xl mx-auto py-20 px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">인증 및 수상내역</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center" data-aos="fade-up" data-aos-delay="0">
+        <img src="./assets/image/award-01.png" alt="ISO 9001 인증" class="w-16 h-16 mb-4">
+        <h3 class="text-lg font-semibold mb-2">ISO 9001 인증</h3>
+        <p class="text-gray-600 text-center text-sm">품질경영시스템 인증 획득(2010)</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center" data-aos="fade-up" data-aos-delay="100">
+        <img src="./assets/image/award-02.png" alt="녹색기술 인증" class="w-16 h-16 mb-4">
+        <h3 class="text-lg font-semibold mb-2">녹색기술 인증</h3>
+        <p class="text-gray-600 text-center text-sm">친환경 기술력 인증(2018)</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+        <img src="./assets/image/award-03.png" alt="산업통상자원부 장관상" class="w-16 h-16 mb-4">
+        <h3 class="text-lg font-semibold mb-2">산업통상자원부 장관상</h3>
+        <p class="text-gray-600 text-center text-sm">우수기업상 수상(2022)</p>
+      </div>
+    </div>
+  </section>
+    <!-- 연혁(History) 영역 -->
+    <section class="max-w-3xl mx-auto py-20 px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" data-aos="fade-up">LS TECH 연혁</h2>
+      <ol class="relative border-l-4 border-blue-600 ml-4">
+        <li class="mb-12 ml-6" data-aos="fade-up" data-aos-delay="0">
+          <span class="absolute -left-6 flex items-center justify-center w-10 h-10 bg-blue-600 rounded-full text-white font-bold text-lg">1990</span>
+          <div class="bg-white rounded-xl shadow-lg p-6 ml-2">
+            <h3 class="text-xl font-semibold mb-2">창립 및 첫 제품 개발</h3>
+            <p class="text-gray-600">LS TECH는 1990년 창립 이래 혁신적인 제품 개발을 통해 성장의 기반을 마련하였습니다.</p>
+          </div>
+        </li>
+        <li class="mb-12 ml-6" data-aos="fade-up" data-aos-delay="100">
+          <span class="absolute -left-6 flex items-center justify-center w-10 h-10 bg-blue-600 rounded-full text-white font-bold text-lg">2002</span>
+          <div class="bg-white rounded-xl shadow-lg p-6 ml-2">
+            <h3 class="text-xl font-semibold mb-2">해외 시장 진출 및 성장 기반 확보</h3>
+            <p class="text-gray-600">2002년 해외 시장 진출을 통해 글로벌 기업으로의 도약을 시작하였습니다.</p>
+          </div>
+        </li>
+        <li class="mb-12 ml-6" data-aos="fade-up" data-aos-delay="200">
+          <span class="absolute -left-6 flex items-center justify-center w-10 h-10 bg-blue-600 rounded-full text-white font-bold text-lg">2023</span>
+          <div class="bg-white rounded-xl shadow-lg p-6 ml-2">
+            <h3 class="text-xl font-semibold mb-2">친환경 기술 연구소 설립</h3>
+            <p class="text-gray-600">2023년 친환경 기술 연구소를 설립하여 미래 기술 개발에 박차를 가하고 있습니다.</p>
+          </div>
+        </li>
+        <li class="ml-6" data-aos="fade-up" data-aos-delay="300">
+          <span class="absolute -left-6 flex items-center justify-center w-10 h-10 bg-blue-600 rounded-full text-white font-bold text-lg">2025</span>
+          <div class="bg-white rounded-xl shadow-lg p-6 ml-2">
+            <h3 class="text-xl font-semibold mb-2">글로벌 시장 확장 및 미래 전략 발표</h3>
+            <p class="text-gray-600">2025년 글로벌 시장 확장과 함께 미래 전략을 발표하며 새로운 도약을 준비하고 있습니다.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+  </main>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      once: true
+    });
+  </script>
+</body>
+</html>

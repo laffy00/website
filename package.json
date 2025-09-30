@@ -1,0 +1,16 @@
+{
+  "name": "ls-tech-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --minify --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0"
+  },
+  "dependencies": {
+    "swiper": "^11.0.0"
+  }
+}

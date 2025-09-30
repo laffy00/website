@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>지속가능경영 | LS TECH</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./assets/css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <!-- 네비게이션 -->
+  <nav class="w-full px-6 py-4 flex justify-between items-center shadow-md bg-white fixed top-0 left-0 z-50">
+    <div class="text-2xl font-bold tracking-widest">LS TECH</div>
+    <ul class="flex gap-8 text-lg font-medium">
+      <li><a href="index.html#hero" class="hover:text-blue-600">메인페이지</a></li>
+      <li><a href="company.html" class="hover:text-blue-600">회사소개</a></li>
+      <li><a href="product.html" class="hover:text-blue-600">제품소개</a></li>
+      <li><a href="sustain.html" class="text-blue-600 font-bold">지속가능경영</a></li>
+      <li><a href="index.html#contact" class="hover:text-blue-600">Contact</a></li>
+    </ul>
+  </nav>
+  <main class="pt-24">
+    <!-- Hero 영역 -->
+    <section class="w-full h-[60vh] md:h-[70vh] flex items-center justify-center relative" style="background-image:url('./assets/image/kv-img-09.jpg'); background-size:cover; background-position:center;">
+      <div class="absolute inset-0 bg-green-900/40"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center w-full h-full">
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white drop-shadow-lg text-center mb-4">지속가능경영</h1>
+        <p class="text-xl md:text-2xl text-white font-light text-center">환경과 사회, 그리고 미래를 위한 책임 있는 기술</p>
+      </div>
+    </section>
+    <!-- Philosophy 영역 -->
+    <section class="max-w-6xl mx-auto py-20 px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">Our Philosophy</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-up">
+          <h3 class="text-2xl font-semibold mb-4 text-green-800">지속가능한 미래를 위한 약속</h3>
+          <p class="text-gray-700 leading-relaxed">LS TECH는 친환경 경영과 윤리경영을 바탕으로, 환경 보호와 사회적 책임을 실천합니다. 모든 비즈니스 과정에서 투명성과 공정성을 지키며, 미래 세대를 위한 지속가능한 기술 혁신에 앞장서고 있습니다.</p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="100">
+          <img src="./assets/image/sustain-philosophy.jpg" alt="Philosophy" class="rounded-xl shadow-lg w-full h-auto object-cover">
+        </div>
+      </div>
+    </section>
+    <!-- Core Values 영역 -->
+    <section class="max-w-6xl mx-auto py-20 px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">Core Values</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center transition-transform duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="0">
+          <img src="./assets/image/value-eco.png" alt="환경보호" class="w-16 h-16 mb-4">
+          <h3 class="text-lg font-semibold mb-2 text-green-700">환경보호</h3>
+          <p class="text-gray-600 text-center text-sm">지속가능한 지구를 위한 친환경 경영 실천</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center transition-transform duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+          <img src="./assets/image/value-social.png" alt="사회적 책임" class="w-16 h-16 mb-4">
+          <h3 class="text-lg font-semibold mb-2 text-blue-700">사회적 책임</h3>
+          <p class="text-gray-600 text-center text-sm">모두를 위한 공정하고 투명한 기업 활동</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center transition-transform duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="200">
+          <img src="./assets/image/value-innovation.png" alt="지속가능한 기술혁신" class="w-16 h-16 mb-4">
+          <h3 class="text-lg font-semibold mb-2 text-green-700">지속가능한 기술혁신</h3>
+          <p class="text-gray-600 text-center text-sm">미래를 위한 혁신적 기술 개발과 실천</p>
+        </div>
+      </div>
+    </section>
+    <!-- 활동 사례(Case Studies) 영역 -->
+    <section class="max-w-6xl mx-auto py-20 px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">Case Studies</h2>
+      <div class="swiper sustain-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-aos="fade-up" data-aos-delay="0">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row items-center">
+              <img src="./assets/image/case-01.jpg" alt="친환경 연구개발" class="w-full md:w-1/3 h-56 object-cover">
+              <div class="p-8 flex-1">
+                <h3 class="text-xl font-semibold mb-2 text-green-700">친환경 연구개발</h3>
+                <p class="text-gray-600">신재생 에너지, 친환경 소재 등 미래를 위한 연구개발을 지속적으로 추진하고 있습니다.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row items-center">
+              <img src="./assets/image/case-02.jpg" alt="사회 공헌" class="w-full md:w-1/3 h-56 object-cover">
+              <div class="p-8 flex-1">
+                <h3 class="text-xl font-semibold mb-2 text-blue-700">사회 공헌</h3>
+                <p class="text-gray-600">지역사회와 함께하는 다양한 사회공헌 활동을 통해 사회적 가치를 실현합니다.</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row items-center">
+              <img src="./assets/image/case-03.jpg" alt="탄소중립 목표" class="w-full md:w-1/3 h-56 object-cover">
+              <div class="p-8 flex-1">
+                <h3 class="text-xl font-semibold mb-2 text-green-700">탄소중립 목표</h3>
+                <p class="text-gray-600">2050 넷제로(Net Zero) 달성을 위한 탄소중립 경영을 실천하고 있습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Swiper pagination -->
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </section>
+    <!-- 미래 비전(Future Vision) 영역 -->
+    <section class="w-full h-[40vh] md:h-[60vh] flex items-center justify-center relative mt-20" style="background-image:url('./assets/image/kv-img-10.jpg'); background-size:cover; background-position:center;">
+      <div class="absolute inset-0 bg-blue-900/50"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center w-full h-full">
+        <h2 class="text-3xl md:text-5xl font-bold text-white text-center mb-4">2050 Net Zero, 함께 만들어가는 미래</h2>
+        <a href="company.html" class="inline-block bg-green-600 text-white px-8 py-3 rounded font-bold hover:bg-green-700 transition">Learn More</a>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      once: true
+    });
+    new Swiper('.sustain-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 32,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      loop: true,
+      autoplay: { delay: 4000 },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 2 },
+      },
+    });
+  </script>
+</body>
+</html>
